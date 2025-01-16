@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('plano_de_fundo.jpg');
+    background-image: url('plano-de-fundo.jpg');
     background-size: cover;
     color: white;
 }
