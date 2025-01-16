@@ -1,147 +1,78 @@
-
-body, html {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: #ff5722;
+    background-color: #333;
     color: white;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-header .logo h1 {
-    font-size: 24px;
-    margin: 0;
+    text-align: center;
 }
 
 header nav ul {
-    list-style: none;
-    margin: 0;
+    list-style-type: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 header nav ul li {
-    margin-left: 20px;
+    display: inline;
+    margin: 0 10px;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    padding: 8px;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Seção principal */
-.main-section {
+.main-section, .services, .contact {
+    padding: 40px;
     text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
+}
+
+.services .service-item {
     margin: 20px 0;
 }
 
-.main-section h2 {
-    font-size: 36px;
-    color: #333;
-}
-
-.main-section p {
-    font-size: 20px;
-    color: #666;
-}
-
-/* Seção de serviços */
-.services {
-    text-align: center;
-    background-color: #eeeeee;
-    padding: 40px 20px;
-}
-
-.services h2 {
-    font-size: 32px;
-    color: #333;
-}
-
-.service-item {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    width: 30%;
-}
-
-.service-item h3 {
-    color: #ff5722;
-    font-size: 24px;
-}
-
-.service-item p {
-    color: #555;
-}
-
-.contact {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
-}
-
-.contact h2 {
-    font-size: 32px;
-    color: #333;
-}
-
-.contact a {
-    color: #ff5722;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-/* Rodapé */
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: #333;
     color: white;
+    text-align: center;
+    padding: 10px;
 }
 
-footer p {
+#cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cookie-consent p {
+    margin: 0;
     font-size: 16px;
 }
 
-@media (max-width: 768px) {
-    .main-section h2 {
-        font-size: 28px;
-    }
+#cookie-consent button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
 
-    .service-item {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
+#cookie-consent button:hover {
+    background-color: #45a049;
 }
