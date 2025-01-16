@@ -28,7 +28,7 @@ function checkCookieConsent() {
 }
 
 document.getElementById('accept-cookies').addEventListener('click', function() {
-    setCookie('cookie-consent', 'accepted', 30); 
+    setCookie('cookie-consent', 'accepted', 30);
     document.getElementById('cookie-consent').style.display = 'none';
 });
 
